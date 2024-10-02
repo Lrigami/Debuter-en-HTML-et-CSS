@@ -1,0 +1,332 @@
+/* commentaire en CSS */
+* {
+    margin: 0;
+  }
+  
+  body {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1em;
+    background-color: #1f2039;
+  }
+  
+  a {
+    color: #242424;
+    text-decoration: none;
+  }
+  
+  em {
+    color: #a5b4fc;
+    font-style: normal;
+  }
+  
+  h1 {
+    font-size: 3.5em;
+    color: #a5b4fc;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  h2 {
+    color: #f9f8ff;
+  }
+  
+  p,
+  li {
+    font-size: 1.1em;
+    color: #f9f8ff;
+  }
+  
+  header,
+  footer {
+    background-color: white;
+    padding: 20px 50px;
+  }
+  
+  .cta,  input[type='submit'] {
+    background: linear-gradient(#8e86b5, #acaeed);
+    color: white;
+    border-radius: 50px;
+    padding: 20px 30px 20px 30px;
+    display: inline-block;
+    margin-top: 20px;
+  }
+  
+  .projet, .ctablock {
+    margin: auto;
+    text-align: center;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .cta:hover, input[type='submit']:hover {
+    background: linear-gradient(#696484, #8788ba);
+    text-decoration: none;
+  }
+  
+  .lien-icone:hover {
+    opacity: 0.5;
+  }
+  
+  .carre-contenu {
+    position: relative;
+    padding: 80px;
+  }
+  
+  .bordure-carre-contenu {
+    position: absolute;
+    border-right: 1px solid #8e86b5;
+    border-bottom: 1px solid #8e86b5;
+    width: 50%;
+    height: 100%;
+    left: 50%;
+    bottom: 5%;
+  }
+  
+  .carre-contenu h2 {
+    margin-top: 30px;
+  }
+  
+  .carre-contenu ul {
+    margin-top: 30px;
+  }
+  
+  section {
+    padding: 80px;
+  }
+  
+  .a-propos-main {
+    width: 50%;
+    margin: auto;
+  }
+
+  .a-propos-main h1 {
+    padding: 20px;
+    padding-left: 0px;
+  }
+  
+ nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ }
+
+ .presentimg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    flex-wrap: wrap;
+    padding-left: 80px;
+    padding-right: 80px;
+ }
+
+ .presentation {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 0;
+ }
+
+ .presentation h1 {
+    margin-bottom: 2%;
+ }
+
+ .projet {
+    margin-top: 10%;
+ }
+
+ .Robbie {
+    position: relative;
+    display:flex;
+    align-self: flex-end;
+ }
+
+ .bordureRobbie {
+    width: 15%;
+    height: 15%;
+    top: 90%;
+    left: 90%;
+    position:absolute;
+    border-right: 1px solid #8e86b5;
+    border-bottom: 1px solid #8e86b5;
+ }
+
+ .dernierprojet {
+    background-color: white;
+    margin: auto;
+ }
+
+ .dernierprojet h2 {
+    text-align: center;
+    color: black;
+    margin-bottom: 80px;
+ }
+
+ .grilleimages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    gap: 10px;
+ }
+
+ .grilleimages div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin: auto;
+    flex-wrap: wrap;
+ }
+
+ .titreportfolio {
+    padding-left: 5%;
+ }
+
+ .portfolio-section-photos {
+    background-color: white;
+    padding-left: 5%;
+  }
+  
+  .portfolio-section-photos h2 {
+    color: #242424;
+    margin-bottom: 80px;
+  }
+
+  .grid-paysages {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px;
+    grid-gap: 15px;
+    width: 100%;
+    margin-bottom: 80px;
+  }
+
+  .grid-portraits {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    grid-gap: 15px;
+    width: 100%;
+    margin-bottom: 80px;
+  }
+  
+  .grid-paysages img,
+  .grid-portraits img {
+    width: 100%;
+    height: 100%;
+    /* Même si vous ne connaissez pas cette propriété, vous en aurez besoin pour permettre aux images de respecter les dimensions de la grid CSS */
+    object-fit: cover;
+  }
+
+  .imageportfolio {
+    position:relative;
+  }
+
+  .imagesurvol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5em;
+    background-color: black;
+    opacity: 70%;
+    font-family: Manrope, sans-serif;
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+  }
+
+  .imageportfolio:hover .imagesurvol {
+    display: flex;
+  }
+
+  .tarifs {
+    margin: auto;
+    padding: 10px;
+  }
+
+  .tarifs h2 {
+    text-align: center;
+    padding-bottom: 80px;
+  }
+
+ .tableautarifs td {
+    border: 1px solid #a5b4fc;
+    color: white;
+    text-align: center;
+    padding: 80px;
+  }
+
+  .tableautarifs th {
+    border: 1px solid #a5b4fc;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+  }
+
+  table {
+    border-collapse: collapse;
+    margin: auto;
+  }
+
+  #section-contact h2 {
+    color:#acaeed;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+  #section-contact {
+    max-width: 60%;
+    margin: auto;
+  }
+
+  form label {
+    font-family: Manrope;
+    font-size: 1em;
+    color: white;
+    margin-bottom: 10px;
+  }
+
+  .nomemail {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-right: 80px;
+    padding-left: 80px;
+    width: auto;
+  }
+
+  .formcolonne {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    flex: 1;
+    margin-bottom: 20px;
+  }
+
+  input, textarea {
+    padding: 15px;
+    border: none;
+    border-radius: 3px;
+  }
+
+  input[type='submit'] {
+    width: 200px;
+    margin: auto;
+    margin-top: 30px;
+  }
